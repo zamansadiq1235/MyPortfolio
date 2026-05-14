@@ -68,7 +68,7 @@ export default function Hero() {
       {/* Name */}
       <motion.h1 {...fadeUp(0.1)} style={{
         fontFamily: 'var(--font-head)',
-        fontSize: 'clamp(52px, 10vw, 110px)',
+        fontSize: 'clamp(42px, 10vw, 110px)',
         fontWeight: 800, lineHeight: 0.95,
         letterSpacing: '-3px', marginBottom: 24,
       }}>
