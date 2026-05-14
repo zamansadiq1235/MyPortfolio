@@ -2,9 +2,12 @@
   "name": "portfolio",
   "scripts": {
     "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
-    "install:all": "cd backend && npm i && cd ../frontend && npm i"
+    "install:all": "cd backend && npm i && cd ../frontend && npm i",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
   },
   "devDependencies": {
-    "concurrently": "^9.2.1"
+    "concurrently": "^9.2.1",
+    "wrangler": "^4.91.0"
   }
 }
