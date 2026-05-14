@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <nav style={{
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-      padding: scrolled ? '14px 60px' : '20px 60px',
+      padding: scrolled ? '14px 40px' : '20px 40px',
       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       background: scrolled ? 'rgba(8,8,16,0.85)' : 'transparent',
       backdropFilter: scrolled ? 'blur(20px)' : 'none',
@@ -30,16 +30,16 @@ export default function Navbar() {
       {/* Logo */}
       <a href="#hero" onClick={e => { e.preventDefault(); scrollTo('hero') }}
         style={{
-          fontFamily: 'var(--font-head)', fontSize: 20, fontWeight: 800,
-          letterSpacing: '-0.5px', color: 'var(--text)', textDecoration: 'none',
+          fontFamily: 'var(--font-head)', fontSize: 20, fontWeight: 750,
+          letterSpacing: '-0.8px', color: 'var(--text)', textDecoration: 'none',
         }}>
         <span style={{ color: 'var(--accent)' }}>&lt;</span>
-        ZamanSadiq
+        Zaman Sadiq
         <span style={{ color: 'var(--accent)' }}> /&gt;</span>
       </a>
 
       {/* Desktop links */}
-      <ul style={{ display: 'flex', gap: 36, listStyle: 'none', margin: 0, padding: 0 }}
+      <ul style={{ display: 'flex', gap: 30, listStyle: 'none', margin: 0, padding: 0 }}
         className="hidden-mobile">
         {NAV_LINKS.map(link => (
           <li key={link}>

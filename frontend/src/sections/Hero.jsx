@@ -17,7 +17,7 @@ export default function Hero() {
       display: 'flex', flexDirection: 'column',
       alignItems: 'center', justifyContent: 'center',
       textAlign: 'center',
-      padding: '120px 24px 80px',
+      padding: '100px 24px 80px',
       position: 'relative', overflow: 'hidden',
     }}>
       {/* Animated orbs */}
@@ -68,7 +68,7 @@ export default function Hero() {
       {/* Name */}
       <motion.h1 {...fadeUp(0.1)} style={{
         fontFamily: 'var(--font-head)',
-        fontSize: 'clamp(42px, 10vw, 110px)',
+        fontSize: 'clamp(38px, 10vw, 100px)',
         fontWeight: 800, lineHeight: 0.95,
         letterSpacing: '-3px', marginBottom: 24,
       }}>
