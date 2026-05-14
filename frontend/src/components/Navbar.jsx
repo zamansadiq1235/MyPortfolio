@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <nav style={{
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
-      padding: scrolled ? '14px 40px' : '20px 40px',
+      padding: scrolled ? '14px 30px' : '20px 30px',
       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
       background: scrolled ? 'rgba(8,8,16,0.85)' : 'transparent',
       backdropFilter: scrolled ? 'blur(20px)' : 'none',
