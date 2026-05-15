@@ -23,7 +23,7 @@ export default function Footer() {
       </button>
 
       <div style={{ color: 'var(--muted)', fontSize: 13 }}>
-        © {year} Zaman Sadiq. Built with React &amp; Node.js ♥
+        © {year} Zaman Sadiq. Built with Flutter &amp; Dart ♥
       </div>
 
       <div style={{ display: 'flex', gap: 24 }}>

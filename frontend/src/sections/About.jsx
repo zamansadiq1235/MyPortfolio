@@ -2,8 +2,8 @@ import { useReveal } from '../hooks/useReveal'
 
 const stats = [
   { number: '10+', label: 'Projects Delivered' },
-  { number: '2+', label: 'Years Coding' },
-  { number: '50+', label: 'GitHub Commits' },
+  { number: '2+', label: 'Years Experience' },
+  { number: '20+', label: 'GitHub Commits' },
   { number: '∞', label: 'Cups of Coffee' },
 ]
 
