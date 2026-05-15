@@ -1,9 +1,9 @@
 import { useReveal } from '../hooks/useReveal'
 
 const stats = [
-  { number: '10+', label: 'Projects Delivered' },
+  { number: '10+', label: 'Projects' },
   { number: '2+', label: 'Years Experience' },
-  { number: '20+', label: 'GitHub Commits' },
+  { number: '40+', label: 'GitHub Commits' },
   { number: '∞', label: 'Cups of Coffee' },
 ]
 
@@ -59,19 +59,25 @@ export default function About() {
         {/* Text side */}
         <div ref={ref3} className="reveal reveal-d2">
           <p style={{ color: 'var(--muted)', lineHeight: 1.85, marginBottom: 20, fontWeight: 300 }}>
-            I'm a <strong style={{ color: 'var(--text)', fontWeight: 500 }}>Flutter Developer</strong> based
-            in Pakistan, passionate about building products that live on the internet.
-            I specialize in Flutter, Dart, Firebase, Rest API Integration, Rest API, Node.js, Exoress.js, and MongoDB.
+            I'm a passionate <strong style={{ color: 'var(--text)', fontWeight: 500 }}>Flutter Developer & Mobile Application Engineer</strong> based
+            with 2+ year of professional experience building cross-platform
+            mobile applications that are fast, clean, and user-focused.
           </p>
           <p style={{ color: 'var(--muted)', lineHeight: 1.85, marginBottom: 20, fontWeight: 300 }}>
-            I love the intersection of <strong style={{ color: 'var(--text)', fontWeight: 500 }}>design and engineering</strong> —
-            writing clean code that creates beautiful, performant user experiences.
-            Every project gets my full attention and commitment to quality.
+            I specialize in <strong style={{ color: 'var(--text)', fontWeight: 500 }}>Flutter & Dart</strong> —
+            ,crafting responsive mobile UIs with solid architecture using MVVM and
+            Clean Architecture principles. My backend experience spans Firebase (Firestore, Auth, FCM, Storage), 
+            REST APIs, and SQLite for local persistence. I'm also expanding my backend capabilities with 
+            Node.js, Express.js, and MongoDB — enabling me to build complete, full-stack solutions from mobile frontend to server-side APIs and databases.
           </p>
           <p style={{ color: 'var(--muted)', lineHeight: 1.85, marginBottom: 36, fontWeight: 300 }}>
-            Currently open to <strong style={{ color: 'var(--text)', fontWeight: 500 }}>full-time roles, freelance projects</strong>,
-            and exciting collaborations. Let's build something amazing together.
+            Currently exprolring <strong style={{ color: 'var(--text)', fontWeight: 500 }}> AI integration</strong>,
+            in mobile applications while montoring aspring developers. I belive in continuous learning and staying ahead of technology trends.
           </p>
+          <p style={{ color: 'var(--muted)', lineHeight: 1.85, marginBottom: 36, fontWeight: 300 }}>
+            I love clean code, collaborative teams, and turning ideas into impactful mobile experiences.
+          </p>
+
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
             {stats.map(({ number, label }) => (
