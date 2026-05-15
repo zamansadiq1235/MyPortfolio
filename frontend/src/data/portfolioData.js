@@ -34,7 +34,7 @@ export const projects = [
     tags: ['Flutter', 'Firebase', 'GetX'],
     github: 'https://github.com/zamansadiq1235/Hotel-Mangement-New',
     demo: '',
-    featured: true,
+    featured: false,
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ export const projects = [
     tags: ['Flutter', 'Firebase', 'GetX'],
     github: 'https://github.com/zamansadiq1235/HR-Management',
     demo: '',
-    featured: true,
+    featured: false,
   },
   {
     id: 3,
