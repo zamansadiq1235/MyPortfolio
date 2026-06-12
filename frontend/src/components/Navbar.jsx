@@ -22,7 +22,9 @@ export default function Navbar() {
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
       padding: scrolled ? '14px 30px' : '20px 30px',
       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-      background: scrolled ? 'rgba(8,8,16,0.85)' : 'transparent',
+      background: scrolled
+  ? 'color-mix(in srgb, var(--bg2) 85%, transparent)'
+  : 'transparent',
       backdropFilter: scrolled ? 'blur(20px)' : 'none',
       borderBottom: scrolled ? '1px solid var(--border)' : 'none',
       transition: 'all 0.4s ease',
@@ -31,7 +33,7 @@ export default function Navbar() {
       <a href="#hero" onClick={e => { e.preventDefault(); scrollTo('hero') }}
         style={{
           fontFamily: 'var(--font-head)', fontSize: 20, fontWeight: 750,
-          letterSpacing: '-0.8px', color: 'var(--text)', textDecoration: 'none',
+          letterSpacing: '-0.8px', color: 'var(--nav-text)', textDecoration: 'none',
         }}>
         <span style={{ color: 'var(--accent)' }}>&lt;</span>
         Zaman Sadiq
@@ -39,7 +41,7 @@ export default function Navbar() {
       </a>
 
       {/* Desktop links */}
-      <ul style={{ display: 'flex', gap: 30, listStyle: 'none', margin: 0, padding: 0 }}
+      <ul style={{ display: 'flex', gap: 25, listStyle: 'none', margin: 0, padding: 0 }}
         className="hidden-mobile">
         {NAV_LINKS.map(link => (
           <li key={link}>
@@ -51,8 +53,8 @@ export default function Navbar() {
               position: 'relative', padding: '4px 0',
               transition: 'color 0.2s',
             }}
-              onMouseEnter={e => e.currentTarget.style.color = 'var(--text)'}
-              onMouseLeave={e => e.currentTarget.style.color = 'var(--muted)'}>
+              onMouseEnter={e => e.currentTarget.style.color = 'var(--nav-text-hover)'}
+              onMouseLeave={e => e.currentTarget.style.color = 'var(--nav-text)'}>
               {link}
             </button>
           </li>
@@ -66,7 +68,7 @@ export default function Navbar() {
           padding: '9px 22px',
           border: '1px solid var(--border2)',
           borderRadius: 40,
-          color: 'var(--text)', fontSize: 13, fontWeight: 500,
+          color: 'var(--nav-text)', fontSize: 13, fontWeight: 500,
           textDecoration: 'none',
           background: 'var(--surface)',
           backdropFilter: 'blur(8px)',
@@ -88,10 +90,7 @@ export default function Navbar() {
       {/* Hamburger */}
       <button onClick={() => setMenuOpen(p => !p)}
         className="show-mobile"
-        style={{
-          background: 'none', border: 'none', cursor: 'pointer',
-          color: 'var(--text)', fontSize: 24, lineHeight: 1,
-        }}>
+        style={{ background: 'var(--bg2)', border: 'none', cursor: 'pointer' }}>
         {menuOpen ? '✕' : '☰'}
       </button>
 
@@ -99,7 +98,7 @@ export default function Navbar() {
       {menuOpen && (
         <div style={{
           position: 'absolute', top: '100%', left: 0, right: 0,
-          background: 'rgba(8,8,16,0.97)',
+          background: 'var(--bg2)',
           backdropFilter: 'blur(20px)',
           borderBottom: '1px solid var(--border)',
           padding: '20px 24px',

@@ -1,0 +1,99 @@
+.bg-container {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Floating Glow Orbs */
+.gradient-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.25;
+  animation: float 18s ease-in-out infinite;
+}
+
+.orb1 {
+  width: 500px;
+  height: 500px;
+  background: var(--accent);
+  top: -150px;
+  left: -150px;
+}
+
+.orb2 {
+  width: 450px;
+  height: 450px;
+  background: var(--accent2);
+  top: 30%;
+  right: -120px;
+  animation-delay: -6s;
+}
+
+.orb3 {
+  width: 400px;
+  height: 400px;
+  background: var(--accent3);
+  bottom: -120px;
+  left: 40%;
+  animation-delay: -12s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(40px, -40px) scale(1.15);
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+/* Premium Grid */
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.03) 1px,
+      transparent 1px
+    );
+
+  background-size: 50px 50px;
+
+  mask-image: radial-gradient(
+    circle at center,
+    black,
+    transparent 90%
+  );
+
+  opacity: 0.5;
+}
+
+/* Noise Texture */
+.noise-overlay {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    radial-gradient(
+      rgba(255,255,255,0.03) 1px,
+      transparent 1px
+    );
+
+  background-size: 8px 8px;
+
+  opacity: 0.15;
+}
