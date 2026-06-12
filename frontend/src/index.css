@@ -3,20 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
 :root {
-  --bg:       #111318;
-  --bg2:      #191c24;
-  --surface:  rgba(148,163,184,0.05);
-  --surface2: rgba(148,163,184,0.09);
-  --border:   rgba(255,255,255,0.08);
-  --border2:  rgba(148,163,184,0.22);
-  --text:     #f8fafc;
-  --muted:    #6a7480;
-  --accent:   #94a3b8;
-  --accent2:  #60a5fa;
-  --accent3:  #818cf8;
-  --glow:     rgba(148,163,184,0.38);
-  --font-head:'Syne', sans-serif;
-  --font-body:'DM Sans', sans-serif;
+  --bg: #f8fbff;
+  --bg2: #ffffff;
+
+  --surface: rgba(19,185,253,0.05);
+  --surface2: rgba(19,185,253,0.1);
+
+  --border: rgba(0,0,0,0.08);
+  --border2: rgba(19,185,253,0.18);
+
+  --text: #0f172a;
+  --muted: #64748b;
+
+  --accent: #02569B;
+  --accent2: #13B9FD;
+  --accent3: #54C5F8;
+  --glow: rgba(19,185,253,0.25);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

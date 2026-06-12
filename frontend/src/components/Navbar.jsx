@@ -47,7 +47,7 @@ export default function Navbar() {
           <li key={link}>
             <button onClick={() => scrollTo(link)} style={{
               background: 'none', border: 'none', cursor: 'pointer',
-              color: 'var(--muted)', fontSize: 13, fontWeight: 500,
+              color: 'var(--nav-text)', fontSize: 13, fontWeight: 500,
               letterSpacing: '0.06em', textTransform: 'uppercase',
               fontFamily: 'var(--font-body)',
               position: 'relative', padding: '4px 0',
