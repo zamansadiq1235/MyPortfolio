@@ -26,34 +26,63 @@ export default function About() {
 
       <div style={{
         display: 'grid', gridTemplateColumns: '1fr 1fr',
-        gap: 80, alignItems: 'center',
+        gap: 80, alignItems: 'start',
       }} className="about-grid">
 
         {/* Photo side */}
         <div ref={ref2} className="reveal" style={{ position: 'relative' }}>
-          <div style={{
-            width: '100%', aspectRatio: '4/5',
-            borderRadius: 24, overflow: 'hidden',
-            background: 'linear-gradient(135deg, var(--accent), var(--accent2))',
-            border: '1px solid var(--border2)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            fontSize: 80, fontFamily: 'var(--font-head)', fontWeight: 800,
-            color: 'rgba(255,255,255,0.12)',
-            position: 'relative',
-          }}>
-            {/* Replace with: <img src="/avatar.jpg" alt="Zaman" style={{width:'100%',height:'100%',objectFit:'cover'}} /> */}
-            ZS
-            <div style={{
-              position: 'absolute', bottom: -16, right: -16,
-              background: 'var(--accent)', color: '#fff',
-              fontSize: 13, fontWeight: 600, padding: '14px 20px',
-              borderRadius: 16, boxShadow: '0 0 30px var(--glow)',
-              fontFamily: 'var(--font-head)',
-            }}>
-              <span style={{ display: 'block', fontSize: 28, lineHeight: 1 }}>2+</span>
-              Years of Experience
-            </div>
-          </div>
+          <div
+    style={{
+      width: '100%',
+      aspectRatio: '4/5',
+      borderRadius: 24,
+      overflow: 'hidden',
+      border: '1px solid var(--border2)',
+      position: 'relative',
+    }}
+  >
+    <img
+      src="/profile.png"
+      alt="Asim Ali Raza"
+      style={{
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+        display: 'block',
+      }}
+    />
+
+    <div
+  style={{
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
+    background: 'var(--accent)',
+    color: '#fff',
+    fontSize: 13,
+    fontWeight: 600,
+    padding: '14px 20px',
+    boxShadow: '0 0 30px var(--glow)',
+    fontFamily: 'var(--font-head)',
+
+    borderTopLeftRadius: '25px',
+    borderTopRightRadius: '0',
+    borderBottomLeftRadius: '0',
+    borderBottomRightRadius: '25px',
+  }}
+>
+  <span
+    style={{
+      display: 'block',
+      fontSize: 28,
+      lineHeight: 1,
+    }}
+  >
+    2+
+  </span>
+  Years of Experience
+</div>
+  </div>
         </div>
 
         {/* Text side */}
