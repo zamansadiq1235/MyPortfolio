@@ -3,22 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
 :root {
-  --bg: #f8fbff;
-  --bg2: #ffffff;
+  --bg: #0a1929;
+  --bg2: #102a43;
 
-  --surface: rgba(19,185,253,0.05);
-  --surface2: rgba(19,185,253,0.1);
+  --surface: rgba(2,136,209,0.08);
+  --surface2: rgba(2,136,209,0.14);
 
-  --border: rgba(0,0,0,0.08);
-  --border2: rgba(19,185,253,0.18);
+  --border: rgba(255,255,255,0.08);
+  --border2: rgba(2,136,209,0.25);
 
-  --text: #0f172a;
-  --muted: #64748b;
+  --text: #ffffff;
+  --muted: #9ca3af;
 
   --accent: #02569B;
   --accent2: #13B9FD;
   --accent3: #54C5F8;
-  --glow: rgba(19,185,253,0.25);
+  --glow: rgba(19,185,253,0.4);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

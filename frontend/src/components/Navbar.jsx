@@ -90,7 +90,7 @@ export default function Navbar() {
       {/* Hamburger */}
       <button onClick={() => setMenuOpen(p => !p)}
         className="show-mobile"
-        style={{ background: 'var(--bg2)', border: 'none', cursor: 'pointer' }}>
+        style={{ background: 'transparent', border: 'none', cursor: 'pointer' }}>
         {menuOpen ? '✕' : '☰'}
       </button>
 
