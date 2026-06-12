@@ -26,7 +26,7 @@ export default function About() {
 
       <div style={{
         display: 'grid', gridTemplateColumns: '1fr 1fr',
-        gap: 80, alignItems: 'start',
+        gap: 40, alignItems: 'start',
       }} className="about-grid">
 
         {/* Photo side */}
@@ -43,7 +43,7 @@ export default function About() {
   >
     <img
       src="/profile.png"
-      alt="Asim Ali Raza"
+      alt="Zaman Sadiq"
       style={{
         width: '100%',
         height: '100%',
