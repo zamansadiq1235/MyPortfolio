@@ -9,7 +9,7 @@ export default function Experience() {
       background: 'linear-gradient(to bottom, transparent, rgba(108,99,255,0.03), transparent)',
       padding: '110px 0', position: 'relative', zIndex: 1,
     }}>
-      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 60px' }}>
+      <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 30px' }}>
 
         <div ref={ref} className="reveal">
           <div className="section-label">Where I've worked</div>
