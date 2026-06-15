@@ -42,7 +42,7 @@ export default function About() {
     }}
   >
     <img
-      src="/profile.jpg"
+      src="/profile.jpeg"
       alt="Zaman Sadiq"
       style={{
         width: '100%',
