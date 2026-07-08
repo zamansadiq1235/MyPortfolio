@@ -28,6 +28,17 @@ export const skills = {
 export const projects = [
   {
     id: 1,
+    image: '/tikprompt.png',
+    title: 'TIK PROMPT',
+    description:
+      'Designed and developed the complete application, including UI/UX design and full API integration, ensuring smooth functionality and a user-friendly experience.',
+    tags: ['Flutter', 'REST APIs', 'UI/UX Design', 'Mobile Development'],
+    github: 'https://github.com/asimaliraz/TikPrompt',
+    demo: 'https://play.google.com/store/apps/details?id=com.app.macorecut',
+    featured: true,
+  },
+  {
+    id: 2,
     image: '/hotel-management.png',
     title: 'Hotel Management App',
     description: 'Complete hotel management system with room booking, real-time database updates, and admin dashboard.',
@@ -37,7 +48,7 @@ export const projects = [
     featured: false,
   },
   {
-    id: 2,
+    id: 3,
     image: '/hr-management.png',
     title: 'HR Management App',
     description: 'Full-featured HR app covering employee attendance, task tracking, leave, expense and role-based workflows.',
@@ -47,7 +58,7 @@ export const projects = [
     featured: false,
   },
   {
-    id: 3,
+    id: 4,
     image: '/flashcard-quiz.png',
     title: 'Flashcard Quiz App',
     description: 'Interactive study tool with card-flip animations and local data persistence using SQLite.',
@@ -57,7 +68,7 @@ export const projects = [
     featured: false,
   },
   {
-    id: 4,
+    id: 5,
     image: '/quotes.png',
     title: 'Random Quote Generator',
     description: 'Minimal Flutter app displaying inspirational quotes with a clean, card-based glassmorphism UI.',
@@ -67,7 +78,7 @@ export const projects = [
     featured: false,
   },
   {
-    id: 5,
+    id: 6,
     image: '/fitness-tracker.png',
     title: 'Fitness Tracker App',
     description: 'Daily fitness tracking for logging workouts and calories with visual progress charts.',
